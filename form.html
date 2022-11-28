@@ -7,7 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    <form>
+    <form method="post" action="https://google.com.vn" 
+    enctype="multipart/form-data">
         <div>
             <input type="text" name="full_name" placeholder="Vui lòng nhập họ tên"/>
         </div>
@@ -54,6 +55,27 @@
                 </div>
             </div>
         </div>
+
+        <div>
+            <div>
+               Bạn ở tỉnh nào
+            </div>
+            <div>
+                <select name="provinces">
+                    <option value="29">Hà Nội</option>
+                    <option value="15">Hải Phòng</option>
+                    <option value="14">Quảng Ninh</option>
+                    <option value="18">Nam Định</option>
+                </select>
+            </div>
+        </div>
+
+        <div>
+            <div>Giới thiệu sơ qua về bản thân</div>
+            <textarea name="intro"></textarea>
+        </div>
+       
+        <button>Submit</button>
     </form>
 </body>
 </html>
