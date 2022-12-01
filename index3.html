@@ -7,17 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    <div>
-        <span>1</span>
-        <span>2</span>
-    
-    </div>
+    <form action="">
+        <input type="text"/>
+        <input type="password" />
+    </form>
+
     <style>
-        div::after{
-            content: "";
-            display: block;
-            width:100px;
-            height: 100px;
+        /*attribute selector*/
+        input[type="password"]{
             background: red;
         }
     </style>
