@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            Header
+        </div>
+        <nav>Navigation Menu</nav>
+        <div class="main-content">
+            <div class="col-1"></div>
+            <div class="col-2"></div>
+            <div class="col-3"></div>
+        </div>
+        <footer>Footer</footer>
+    </div>
+
+    <style>
+        .container{
+            width:998px;
+            margin:0px auto;
+        }
+
+        .container .header{
+            background: #cdcdec;
+            padding:10px;
+            text-align: center;
+        }
+
+        .container nav{
+            background: #cdcdec;
+            padding:10px;
+            text-align: center;
+            margin-top:10px
+        }
+
+        .main-content{
+            border:1px solid red;
+            position: relative;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+        .main-content .col-1{
+            width:20%;
+            float:left;
+            height: 400px;
+            background: #cdcdec;
+        }
+
+        .main-content .col-2{
+            width:55%;
+            float:left;
+            height: 400px;
+            margin-left:2.5%;
+            background: #cdcdec;
+        }
+        .main-content .col-3{
+            width:20%;
+            float:right;
+            height: 400px;
+            background: #cdcdec;
+        }
+
+        footer{
+            background: #cdcdec;
+            margin-top:10px;
+            text-align: center;
+        }
+    </style>
+</body>
+</html>
