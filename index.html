@@ -1,35 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
 <body>
-    <form>
-        <input type="checkbox"/>
-        <input type="checkbox"/>
-        <input type="checkbox"/>
-        <button>Submit</button>
-    </form>
+<script>
+    let num1 = 10;
+    let num2 = 20;
+    let result = num1 / num2;//0.5
+    console.log(result);
+    console.log(num1 / num2);
+    console.log(num1 + num2);
+    console.log(num1 - num2);
+    console.log(num1 * num2);
+    console.log(6 % 2);
 
-    <style>
-        input:checked{
-            border: 2px solid red;
-            display: inline-block;
-            width: 20px;
-            height: 20px;
-        }
-
-        button{
-            background: rgb(178, 178, 234);
-        }
-
-        button:hover{
-            background:rgb(60, 60, 114);
-            padding:10px;
-        }
-    </style>
+    num1 += 20;
+    console.log(num1);
+</script>
 </body>
 </html>
