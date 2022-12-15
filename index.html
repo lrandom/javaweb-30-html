@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+   <div>A</div>
+   <div>B</div>
+   <button onclick="addText()">
+       Click Me
+   </button>
+</body>
+
+<script>
+    function addText() {
+        const divNodes = document.querySelectorAll('div');
+        for (let i = 0; i < divNodes.length; i++) {
+            divNodes[i].innerHTML='HELLO';
+            divNodes[i].style.backgroundColor = 'red';
+            divNodes[i].style.color = 'green';
+        }
+    }
+</script>
+
+</html>

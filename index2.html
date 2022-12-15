@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form onsubmit="return onSubmit()">
+    <input type="text" onchange="onChange()" onblur="onBlur()" onfocus="onFocus()">
+    <button>Submit</button>
+</form>
+
+<div class="box" onmouseover="changeBoxColorBlue()" onmouseout="changeBoxColorRed()">
+
+</div>
+
+<style>
+    .box {
+        width: 100px;
+        height: 100px;
+        background: red;
+    }
+</style>
+<script>
+    const box = document.querySelector('.box');
+    box.addEventListener('click', function () {
+      alert("Hello");
+    });
+
+    function changeBoxColorBlue() {
+      const box = document.querySelector('.box');
+      box.style.backgroundColor = 'blue';
+    }
+
+    function changeBoxColorRed() {
+      const box = document.querySelector('.box');
+      box.style.backgroundColor = 'red';
+    }
+
+    function onChange() {
+        console.log("change");
+    }
+
+    function onFocus() {
+        console.log("focus");
+    }
+
+    function onBlur() {
+        console.log("blur");
+    }
+
+    function onSubmit() {
+        const c = confirm("Submit Data ?");
+        if (c) {
+            return true;
+        }
+        return false;
+    }
+</script>
+</body>
+</html>

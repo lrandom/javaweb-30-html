@@ -34,3 +34,9 @@ const {odd, even} = sum(20);
 const obj = sum(30);
 obj.odd;
 obj.even;
+
+document.getElementById("id");//trả về 1 node/object/nút tương ứng
+document.getElementsByClassName('ten_class_tap_cac_the')//trả về một mảng các nodes tương ưứng
+document.getElementsByTagName('div');//trả về một mảng các nodes tương ứng
+document.querySelector('select của đối tượng/tập đối tượng tương ứng');//trả về một đối tượng
+document.querySelectorAll('selector của đối tượng/tập đối tượng');//tập các nút/đối tượng
