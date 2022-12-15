@@ -23,10 +23,10 @@
       function appendP() {
           const wrapperNode = document.querySelector('#wrapper');
           for (let i = 0; i < mang.length; i++) {
-              const itemText = mang[i];
+              const itemText = mang[i];//lấy text tại vị trí i
               const pNode = document.createElement('p');//tạo ra node p
-              pNode.innerText = itemText;
-              wrapperNode.appendChild(pNode);
+              pNode.innerText = itemText;//đổ text vào thẻ p
+              wrapperNode.appendChild(pNode);//thêm p vào div wrapper
           }
       }
   </script>
