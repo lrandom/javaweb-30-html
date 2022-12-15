@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<div id="wrapper">
+    <p>This is paragraph 1</p>
+    <p>This is paragraph 2</p>
+    <p>This is paragraph 3</p>
+    <p>This is paragraph 4</p>
+</div>
+
+<div id="copy-wrapper">
+
+</div>
+
+<button id="btn" onclick="copyP()">Copy</button>
+<script>
+    function copyP() {
+        const pNodes = document.querySelectorAll('#wrapper p');
+        const copyWrapper = document.querySelector('#copy-wrapper');
+        for (let i = 0; i < pNodes.length; i++) {
+            const pNode = document.createElement('p');
+            pNode.innerText = pNodes[i].innerText;
+            copyWrapper.appendChild(pNode);
+        }
+    }
+</script>
+</body>
+</html>
