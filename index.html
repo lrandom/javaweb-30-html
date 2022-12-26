@@ -6,46 +6,51 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
-            integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-    <script>
-        $(document).ready(function () {
-            // document.querySelector('div').addEventListener('click'm,fiunm);
-            $('button').click(function () {
-                $('p').after('<p>HIHI</p>');
-            });
-            $('.btn-get-value').click(function () {
-                const data = $('input[name="username"]').val('HIHI');
-                console.log(data);
-            });
-
-            let num = 0;
-            $('.append').click(function () {
-                num++;
-                $('ul').append('<li>' + num + '</li>')
-            });
-
-            $('img').attr('src');
-            $('img').attr('src', 'https://anhdep.jpg');
-        });
-    </script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 </head>
 <body>
-<div>
-    <img src="https://anhdep.png"/>
+   <div class="rect" style="position: relative"></div>
+   <button>Button</button>
+   <style>
+       .rect {
+           width: 100px;
+           height: 100px;
+           background: red;
+       }
 
-    <ul>
+   </style>
 
-    </ul>
-    <button class="append">Append</button>
+   <script>
+     /*  $('button').click(function () {
+           $('.rect').hide(3000, function () {
+               $('.rect').show(3000);
+           });
+       });*/
 
-    <p>
-        <span>NIIT</span>
-    </p>
-    <p>ABC</p>
-    <button>Click</button>
+ /*    $('button').click(function () {
+         $('.rect').toggle(3000, function () {
+             $('.rect').toggle(3000);
+         });
+     });*/
 
-    <input type="text" name="username"/>
-    <button class="btn-get-value">Get Value</button>
+    /* $('button').click(function () {
+         $('.rect').slideUp(3000, function () {
+             $('.rect').slideDown(3000);
+         });
+     });*/
+
+/*     $('button').click(function () {
+         $('.rect').fadeOut(3000, function () {
+             $('.rect').fadeIn(3000);
+         });
+     });*/
+
+     $('button').click(function () {
+         $('.rect').css({
+             width:'500px',
+             left:'100px'
+         },3000)
+     });
+   </script>
 </body>
 </html>
