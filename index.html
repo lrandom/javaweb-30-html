@@ -1,26 +1,51 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+            integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            // document.querySelector('div').addEventListener('click'm,fiunm);
+            $('button').click(function () {
+                $('p').after('<p>HIHI</p>');
+            });
+            $('.btn-get-value').click(function () {
+                const data = $('input[name="username"]').val('HIHI');
+                console.log(data);
+            });
+
+            let num = 0;
+            $('.append').click(function () {
+                num++;
+                $('ul').append('<li>' + num + '</li>')
+            });
+
+            $('img').attr('src');
+            $('img').attr('src', 'https://anhdep.jpg');
+        });
+    </script>
 </head>
 <body>
-   <div>A</div>
-   <div>B</div>
-   <button onclick="addText()">
-       Click Me
-   </button>
+<div>
+    <img src="https://anhdep.png"/>
+
+    <ul>
+
+    </ul>
+    <button class="append">Append</button>
+
+    <p>
+        <span>NIIT</span>
+    </p>
+    <p>ABC</p>
+    <button>Click</button>
+
+    <input type="text" name="username"/>
+    <button class="btn-get-value">Get Value</button>
 </body>
-
-<script>
-    function addText() {
-        const divNodes = document.querySelectorAll('div');
-        for (let i = 0; i < divNodes.length; i++) {
-            divNodes[i].innerHTML='HELLO';
-            divNodes[i].style.backgroundColor = 'red';
-            divNodes[i].style.color = 'green';
-        }
-    }
-</script>
-
 </html>
